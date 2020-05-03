@@ -1,0 +1,969 @@
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    align-items: center;
+    
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    list-style: none;
+    outline: none;
+}
+
+
+/*nav start*/
+
+
+.khan{
+    background: #3C3F41;
+    min-height: 70px;
+    border-bottom: 1px solid rgba(5, 237, 248, 0.3);
+}
+
+
+.momin{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #05EDF8 !important;
+    transition: 0.5s;
+}
+
+.momin:hover{
+    font-size:25px;
+    color: #fff !important;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+ul li a{
+    position: relative;
+    margin: 0 45px;
+    font-size: 16px;
+    color: #05EDF8 !important;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+
+ul li a:last-child{
+    margin-right: 0px;
+}
+
+ul li a:hover{
+    color: #000 !important;;
+    background: #05EDF8;
+    font-size: 18px;
+}
+
+#scroll-active li.active a{
+    color: #000;
+    display: block;
+}
+
+ul li a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #05EDF8;
+    border-width: 0 0 3px 3px;
+    transition: 0.5s;
+    opacity: 0;
+}
+ul li a:hover:before{
+    bottom: -10px;
+    left: -10px;
+    opacity: 1;
+}
+
+
+ul li a:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #05EDF8;
+    border-width: 3px 3px 0 0;;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+ul li a:hover:after{
+    top: -10px;
+    right: -10px;
+    opacity: 1;
+}
+
+
+/*sticky menu*/
+
+nav.sticky{
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 6;
+}
+
+/*head start*/
+
+section{
+    background: #3C3F41;
+}
+
+#hom{
+    padding: 130px 0  0 0;
+    border-bottom: 1px solid rgba(5, 237, 248, 0.38);
+}
+#hom h1{
+    animation: type 2s infinite steps(18);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes type{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 18ch;
+    }
+}
+
+.banner-content h3, h4{
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    transition: 0.7s;
+}
+
+.banner-content h4{
+    margin-top: 15px;
+}
+
+.banner-content h3:hover{
+    font-size:30px;
+    color: #05EDF8;
+    font-weight: 700;
+}
+
+.banner-content h4:hover{
+    font-size:30px;
+    color: #05EDF8;
+    font-weight: 700;
+}
+
+.banner-content h1{
+    font-size: 40px;
+    color:#05EDF8;
+    text-transform: uppercase;
+    transition: 0.7s;
+}
+
+.banner-content h1:hover{
+    font-size: 45px;
+    color:#fff;
+    font-weight: 700;
+}
+
+.icons{
+    font-size: 30px; 
+    margin-bottom: 15px;
+    transition: 0.7s;
+}
+
+.icons:hover{
+    font-size: 27px;
+}
+
+.icons a{
+    color: #05EDF8;
+    padding-right: 17px;
+}
+
+.icons a:hover{
+    color: #fff;
+}
+
+
+.btn{
+    position: absolute;
+    color:#05EDF8 !important;
+    padding: 10px 20px !important;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 20px 20px rgba(0,0,0,.5);
+    overflow: hidden;
+    transition: 0.7s;
+}
+
+.btn:hover{
+    color:#fff !important;
+    font-size: 23px;
+    box-shadow: 0 10px 10px rgba(5, 237, 248, 0.27) 
+}
+
+.bth:before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba( 255,255,255,0.05);
+}
+
+a span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #05EDF8, rgba(5, 237, 248, 0));
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%)
+    }
+    100%{
+        transform: translateX(100%)
+    }
+}
+
+a span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, #05EDF8, rgba(5, 237, 248, 0));
+    animation: animate2 1s linear infinite;
+}
+
+@keyframes animate2{
+    0%{
+        transform: translatey(-100%)
+    }
+    100%{
+        transform: translatey(100%)
+    }
+}
+
+a span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #05EDF8, rgba(5, 237, 248, 0));
+    animation: animate3 1s linear infinite;
+        
+}
+
+@keyframes animate3{
+    0%{
+        transform: translatex(100%)
+    }
+    100%{
+        transform: translatex(-100%)
+    }
+}
+
+a span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, #05EDF8, rgba(5, 237, 248, 0));
+    animation: animate4 1s linear infinite;
+}
+
+@keyframes animate4{
+    0%{
+        transform: translatey(100%)
+    }
+    100%{
+        transform: translatey(-100%)
+    }
+}
+
+/*about start*/
+
+#about{
+    padding: 90px 0 90px 0;
+}
+
+#about{
+    background: url(img/about.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #3C3F41;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.about{
+    width: 55%;
+    float: right;
+    background-color: #05EDF8;
+    padding: 45px;
+}
+
+.about h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: #3C3F41;
+}
+
+.text{
+    font-size: 14px;
+    color: #000;
+    line-height: 25px;
+    text-align: justify
+}
+
+
+/*skill start*/
+
+#skills{
+    padding: 90px 0 90px 0;
+}
+
+.contai{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.contai h2{
+    color: #05EDF8;
+    font-size:30px;
+    font-weight: 700;
+    word-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.contai .skills{
+    position: relative;
+    margin: 20px 0;
+    padding: 24px 10px 18px;
+    background: linear-gradient(#616161 0%, #333 10%, #222);
+    border-radius: 8px;
+    transition: 1s;
+}
+
+.contai:hover .skills{
+    opacity: 0.06;
+}
+
+.contai .skills:hover{
+    opacity: 1;
+}
+
+.contai .skills:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255,255,255, .1)
+}
+
+.contai .skills .name{
+    position: relative;
+    width: 110px;
+    text-align: right;
+    color: #fff;
+    font-size: 14px;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+.contai .skills .value{
+    position: relative;
+    width: 40px;
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+.contai .skills .percent{
+    position: relative;
+    width: calc(100% - 170px);
+    height: 10px;
+    margin: 0 20px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+
+.contai .skills .percent .progress{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 3s infinite ease-in-out forwards;
+}
+
+@keyframes animate{
+    from{
+        width: 0;
+    }
+}
+
+.contai .skills:nth-child(2) .percent .progress {
+    background: linear-gradient(45deg, #1fe6ff, #673ab7)
+}
+
+.contai .skills:nth-child(3) .percent .progress {
+    background: linear-gradient(45deg, #3bc0ff, #33ff00)
+}
+
+.contai .skills:nth-child(4) .percent .progress {
+    background: linear-gradient(45deg, #ffee54, #673ab7)
+}
+
+.contai .skills:nth-child(5) .percent .progress {
+    background: linear-gradient(45deg, #1fe6ff, #ff00ca)
+}
+
+.contai .skills:nth-child(6) .percent .progress {
+    background: linear-gradient(45deg, #22ffde, #2196f3)
+}
+
+/* Services start*/
+
+#service{
+    padding: 90px 0 90px 0;
+}
+
+#service h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #05EDF8;
+    text-transform: uppercase;
+    font-weight: 700;
+} 
+
+.main{
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.service{
+    background: #05EDF8;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: : 0 0 20px -15px #030380;
+    transition: transform .8s;
+}
+
+.service h4{
+    font-size: 20px;
+    color:#000;
+    font-weight: 700;
+    margin-top: 30px;
+    position: relative;
+}
+
+.service p{
+    font-size: 15px;
+    color: #3C3F41;
+}
+
+.service-logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: #05EDF8;
+    border: 18px solid #3C3F41;
+}
+
+.service-logo i{
+    font-size: 40px;
+    color: #fff !important;
+    width: 50px;
+    margin-top: 20px;
+    transition: transform 1s;
+}
+
+
+.service h4::after{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #05EDF8,#3C3F41);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+
+.service h4::before{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right,#3C3F41, #05EDF8);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.shadowOne{
+    height: 200px;
+    width: 80%;
+    background: #05EDF8;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: : 0 0 20px -15px #030380;
+    transition: transform .8s;
+}
+
+.shadowTwo{
+    height: 200px;
+    width: 64%;
+    background: #05EDF8;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -;
+}
+
+.main:hover .service{
+    transform: translateY(-50px);
+}
+
+.main:hover .shadowOne{
+    transform: translateY(-25px);
+}
+
+.main:hover i{
+    transform: rotate(360deg);
+}
+
+/* Portfolio start*/
+
+#portfolio{
+    padding: 90px 0 90px 0;
+}
+
+.little-description{
+    text-align: center;
+}
+
+.little-description h5{
+    font-size: 16px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.little-description h2{
+    font-size: 25px;
+    font-weight: 700;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    color:#05EDF8;
+    margin-bottom: 20px;
+}
+
+.portfolio-filter{
+    margin-bottom: 25px
+}
+
+
+#portfolio .control .portfolio-filter button.mixitup-control-active{
+    color: #fff;
+}
+
+#portfolio .control .portfolio-filter button{
+    background: #05EDF8;
+    text-align: center;
+    border: 0;    
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+    margin: 0 10px;
+    color: #3C3F41;
+}
+
+
+#portfolio .control .portfolio-filter button::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ffee54 20%, #673ab7 100%);
+    z-index: -1;
+    transition: .5s linear;
+    width: 0;
+    border-radius: 50px;
+}
+
+#portfolio .control .portfolio-filter button.mixitup-control-active::before{
+    width: 100%
+}
+
+
+#portfolio .port-img{
+    overflow: hidden;
+    position: relative;
+     transition: all 0.7s ease-in-out;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#portfolio .port-img img{
+    object-fit: fill;
+    height: 100%;
+}
+
+
+#portfolio .port-img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+    width: 0%;
+    height: 100%;
+    transition: all 0.7s ease-in-out;
+    z-index: 2;
+}
+
+#portfolio .port-img:hover::before{
+    width: 100%;
+    opacity: 0.4;
+}
+
+#portfolio .port-img:hover img{
+    transform: scale(1.1)
+}
+
+
+#portfolio .port-img {
+    width: 100%;
+    height: 222px;
+    transition: all 0.7s ease-in-out;
+    transform: scale(1);
+}
+
+#portfolio .port-img .view {
+    position: absolute;;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    display: inline-block;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    color: #05EDF8;
+    font-size: 45px;
+    transition: all 0.7s ease-in-out;
+    pointer-events: none;
+}
+
+#portfolio .port-img:hover .view{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translate(-50%, -50%);
+}
+
+.psd{
+    margin-bottom: 30px;
+}
+
+/*Testimonial*/
+
+#testimonials{
+    padding: 90px 0 90px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#testimonails-cover h3{
+    font-size: 30px;
+    font-weight: 700;
+    color:#05EDF8;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 50px; 
+}
+    
+.single-testimonial{
+    color: #fff;
+    padding-left: 75px;
+    position: relative;
+    margin: 0 15px 15px;
+}
+
+.img-area{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    left: 0;
+    margin-top: -75px;
+    position: absolute;
+    top: 50%;
+}
+
+.testi-text{
+    background: #05EDF8;
+    padding: 40px 20px 40px 100px;
+    color: #3C3F41;
+}
+
+.img-area img{
+    background: linear-gradient(to bottom, darkcyan, white);
+    border-radius: 50%;
+    padding: 5px
+}
+
+.testi-text h6{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.testi-text span{
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 3px;
+}
+
+.testi-text p{
+    font-size: 16px;
+    font-style: italic
+}
+
+.single-testimonial:hover .testi-text{
+    background: #fff;
+    transition: 0.9s;
+    color: #05EDF8;
+}
+
+#testimonials div.owl-nav{
+    color: #05EDF8;
+    display: inline-block;
+    font-size: 55px;
+    height: 60px;
+    margin-top: -30px;
+    text-align: center;
+    width: 40px;
+    transform: 0.3s;
+}
+
+.owl-prev, .owl-next{
+    position: absolute;
+}
+
+.owl-prev{
+    left: -20px;
+    top: 100px
+}
+
+.owl-next{
+    right: -20px;
+    top: 100px;
+}
+
+/*contact*/
+
+#contact{
+    padding: 90px 0 90px 0;
+    
+}
+#contact h2{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #05EDF8;
+}
+
+.container .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(autofit,minmax(300px,1fr));
+    
+}
+
+.container .row100 .col{
+    width: 100%;
+    padding: 0 10px;
+    margin: 25px 0 10px;
+    transition: 0.7s;
+}
+
+.container .row100 .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #05EDF8;
+}
+
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+}
+
+.container .row100 .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    color: #05EDF8;
+    padding: 0 10px;
+    display: block;
+    transition: 0.7s;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus + .text,
+.container .row100 .inputBox input:valid + .text{
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #0BD8E2;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus ~ .line,
+.container .row100 .inputBox input:valid ~ .line{
+    height: 100%;
+}
+
+.container .row100 .inputBox.textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.container .row100 .inputBox.textarea textarea{
+    height: 100%;
+    resize: none;
+}
+
+.container .row100 .inputBox textarea:focus + .text,
+.container .row100 .inputBox textarea:valid + .text{
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox textarea:focus ~ .line,
+.container .row100 .inputBox textarea:valid ~ .line{
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
